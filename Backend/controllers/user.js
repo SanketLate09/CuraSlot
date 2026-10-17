@@ -5,7 +5,10 @@ import usermodel from '../models/user.js'
 import { v2 as cloudinary } from 'cloudinary'
 import doctorModel from '../models/doctors.js'
 import appointmentmodel from '../models/appointment.js'
-import razorpay from 'razorpay'
+import Razorpay from "razorpay";
+import dotenv from "dotenv";
+dotenv.config(); 
+
 
 const registerUser = async (req, res) => {
     try {
@@ -211,7 +214,7 @@ const cancelappointment = async (req, res) => {
 const razorpayKeyId = process.env.RAZORPAY_KEY_ID;
 const razorpayKeySecret = process.env.RAZORPAY_SECRET_KEY;
 
-const razorpayinstance = new razorpay({
+const razorpayinstance = new Razorpay({
     key_id: razorpayKeyId,
     key_secret: razorpayKeySecret,
 })
