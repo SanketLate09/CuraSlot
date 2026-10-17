@@ -120,13 +120,5 @@ Contributions are welcome! Follow these steps:
    ```
 5. Open a pull request.
 
----
-
-
-## 📧 Contact
-
-Feel free to reach out:
-- **Author**: [Sanket Mandwal](https://github.com/Sanketmandwal)
-- **Email**: sanketmandwal2@gmail.com
 
 ---
